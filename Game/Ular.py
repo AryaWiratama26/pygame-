@@ -1,0 +1,2 @@
+class Ular:
+    pass

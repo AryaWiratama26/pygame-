@@ -1,0 +1,2 @@
+class Makan:
+    pass
