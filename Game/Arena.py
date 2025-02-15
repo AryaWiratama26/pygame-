@@ -18,8 +18,9 @@ class Arena:
             pygame.draw.line(self.surface,(0,0,0),(x,0),(x,self.arena_tinggi))
             pygame.draw.line(self.surface,(0,0,0),(0,y),(self.arena_lebar,y))
             
-    def render(self):
+    def render(self,delay_ms):
         self.surface.fill((255,255,255))
         self.draw_grid()
         pygame.display.update()
+        pygame.time.delay(delay_ms)
 

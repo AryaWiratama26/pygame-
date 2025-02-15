@@ -17,10 +17,14 @@ while isRun:
             isRun = False
 
     # Update
-    kepala.move(1,0)
+    keys = pygame.key.get_pressed()
+    for key in keys:
+        if keys[pygame.K_RIGHT]:
+            kepala.move(1,0)
+
     
     # Render
-    arena.render()
+    arena.render(100)
     
 
 pygame.quit()            
